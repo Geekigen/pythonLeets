@@ -9,7 +9,9 @@ def twoSum(num, target):
         return [temp[target - value], index]
     print(temp)
 
-print(twoSum([2, 7, 11, 15], 9))
+
+print(twoSum([2, 7, 11, 15], 9), "...first formula")
+
 
 # Summary . here we will take the array and the target
 # if you know a little bit of math ,x+y = c ,to make x the subject, x = c-y
@@ -21,8 +23,10 @@ print(twoSum([2, 7, 11, 15], 9))
 # to add to the given target
 # This also acts as the base case for the loop
 #  the second way of doing it
-def twoSum2(numberlist,target):
-    return[[x, y] for x in range(len(numberlist)) for y in range(len(numberlist)) if numberlist[x] + numberlist[y] == target]
+def twoSum2(numberlist, target):
+    return [[x, y] for x in range(len(numberlist)) for y in range(len(numberlist)) if
+            numberlist[x] + numberlist[y] == target]
 
-print(twoSum2([1,2,3,4,5,6,7],9))
+
+print(twoSum2([1, 2, 3, 4, 5, 6, 7], 9), "....second formula")
 # the second option is more dynamic and more simplified
